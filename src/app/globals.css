@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-surface: #faf9f7;
+    --color-surface-dim: #dadad8;
+    --color-surface-container: #efeeec;
+    --color-surface-container-high: #e9e8e6;
+    --color-on-surface: #1a1c1b;
+    --color-charcoal: #1a1a1a;
+    --color-wolfer-red: #e31e24;
+    --color-orange: #f7941d;
+    --color-adhesive-green: #2e7d32;
+    --color-grout-navy: #1a237e;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px !important;
+  }
+
+  body {
+    background-color: #faf9f7;
+    color: #1a1c1b;
+    font-family: var(--font-body), 'Public Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline), 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+}
+
+.shadow-industrial {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 12px 24px;
+}
+
+.btn-primary:hover {
+  background-color: #e31e24;
+}

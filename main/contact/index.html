@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Project Enquiry - Wolfer Architectural</title>
+  <link rel="stylesheet" href="../foundation/tokens.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .page-header {
+      background-color: var(--color-surface-container);
+      padding: 64px var(--margin-desktop);
+      border-bottom: 1px solid var(--color-outline-variant);
+    }
+    .form-container {
+      max-width: 650px;
+      padding: 64px var(--margin-desktop);
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d1d1d1;
+      font-family: inherit;
+      font-size: 15px;
+      outline: none;
+    }
+    input:focus, textarea:focus {
+      border-color: var(--color-wolfer-red);
+    }
+    .btn-submit {
+      background-color: var(--color-charcoal);
+      color: #ffffff;
+      border: none;
+      padding: 16px 36px;
+      font-family: var(--font-headline);
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .btn-submit:hover {
+      background-color: var(--color-wolfer-red);
+    }
+  </style>
+</head>
+<body>
+  <header style="background:#1a1a1a; padding: 24px 64px; display:flex; justify-content:space-between; align-items:center;">
+    <a href="../home/index.html" style="color:#fff; font-family:'Oswald'; font-size:28px; font-weight:700; text-decoration:none;">WOLFER</a>
+    <nav>
+      <a href="../products/index.html" style="color:#fff; text-decoration:none; margin:0 16px; font-family:'Oswald';">PRODUCTS</a>
+      <a href="../services/index.html" style="color:#fff; text-decoration:none; margin:0 16px; font-family:'Oswald';">SERVICES</a>
+      <a href="../about/index.html" style="color:#fff; text-decoration:none; margin:0 16px; font-family:'Oswald';">ABOUT</a>
+      <a href="../contact/index.html" style="color:#e31e24; text-decoration:none; margin:0 16px; font-family:'Oswald';">CONTACT</a>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>PROJECT SPECIFICATION & DIRECT ENQUIRY</h1>
+    <p style="margin-top:8px; color:#555;">Consult with our technical engineering desk regarding tile adhesives, sample kits, or customized specification docs.</p>
+  </div>
+
+  <main class="form-container">
+    <form onsubmit="event.preventDefault(); alert('Enquiry submitted successfully.');">
+      <div class="form-group">
+        <label for="name">Architect / Firm / Name</label>
+        <input type="text" id="name" required placeholder="e.g. Studio Arc Architectural Partners">
+      </div>
+      <div class="form-group">
+        <label for="email">Professional Email</label>
+        <input type="email" id="email" required placeholder="architect@firm.com">
+      </div>
+      <div class="form-group">
+        <label for="category">Area of Consultation</label>
+        <select id="category">
+          <option>Commercial Tile Adhesive Specification</option>
+          <option>Epoxy Grout System Selection</option>
+          <option>Large-Format Slab Installation Review</option>
+          <option>Sample Kit Request</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Project Scope & Substrate Details</label>
+        <textarea id="message" rows="5" placeholder="Specify substrate type, tile dimensions, indoor/outdoor setting, and estimated area..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit Technical Enquiry</button>
+    </form>
+  </main>
+</body>
+</html>
